@@ -1,0 +1,23 @@
+@import 'base/colours';
+.pagination{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        ol{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            li{
+                margin: 10px;
+            }
+        }
+    }
+}
+
+

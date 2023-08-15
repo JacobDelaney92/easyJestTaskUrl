@@ -1,0 +1,12 @@
+.submission{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__container{
+        max-width: 1024px;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: 2rem;
+    }
+}
+

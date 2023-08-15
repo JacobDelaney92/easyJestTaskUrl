@@ -1,0 +1,30 @@
+
+a{
+    font-family:$body-font-family ;
+    color: $color-grey;
+    &:hover {
+        color: $color-blue;
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: $color-green; /* Change link color when clicked */
+    }
+}
+.active{
+   border-bottom: 3px solid $color-blue;
+}
+.empty-message {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+.error-message {
+    margin-top: 5px;
+    color: red;
+    font-size: 14px; 
+}
+.hide{
+    display: none;
+}

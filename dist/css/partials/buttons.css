@@ -1,0 +1,27 @@
+.ej-cta {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #000;
+  background-color: transparent;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #000;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.ej-cta:hover {
+  color: #FF0000;
+  border: 0.1em solid #FF0000;
+}
+
+@media all and (max-width: 30em) {
+  .ej-cta {
+    display: block;
+    margin: 0.4em auto;
+  }
+}

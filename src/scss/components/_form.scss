@@ -1,0 +1,25 @@
+.form {
+    .url-input {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+        &__container{
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+    }
+}
+input {
+    width: 93%;
+    border: 2px solid black;
+    border-right: none;
+    border-radius: 0.125rem;
+    padding: 0.5rem;
+    border-width: 1px;
+    @include sm {
+        width: 75%;
+    }
+}
+
