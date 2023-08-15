@@ -6,7 +6,7 @@
     max-width: 1024px;
     margin: 0 auto;
     @include sm{
-        padding: 1rem;
+        padding: 1rem 2rem
     }
     &__list{
         li{
@@ -20,6 +20,9 @@
         }
         input{
             width: 65%;
+            @include sm{
+            width: 85%;
+            }
             border-right: 1px solid black;
         }
         svg{

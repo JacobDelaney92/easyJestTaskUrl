@@ -122,9 +122,15 @@ button.edit:hover {
   width: 50%;
   margin: 0 auto;
 }
+@media (max-width: 480px) {
+  .form .url-input {
+    width: 90%;
+  }
+}
 .form .url-input__container {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -150,7 +156,7 @@ input {
 }
 @media (max-width: 480px) {
   .links {
-    padding: 1rem;
+    padding: 1rem 2rem;
   }
 }
 .links__list li {
@@ -168,6 +174,11 @@ input {
 .links__list li input {
   width: 65%;
   border-right: 1px solid black;
+}
+@media (max-width: 480px) {
+  .links__list li input {
+    width: 85%;
+  }
 }
 .links__list li svg {
   margin-right: 12px;
@@ -197,9 +208,20 @@ input {
 }
 .submission__container {
   max-width: 1024px;
+  width: 55%;
   margin: 0 auto;
   border: 1px solid black;
   padding: 2rem;
+}
+@media (max-width: 480px) {
+  .submission__container {
+    width: 85%;
+  }
+}
+@media (max-width: 960px) {
+  .submission__container {
+    width: 75%;
+  }
 }
 
 .loader {
@@ -210,8 +232,15 @@ input {
   height: 20px;
   animation: spin 1s linear infinite;
   display: none;
-  position: relative;
+  position: fixed;
+  bottom: 25%;
   left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 480px) {
+  .loader {
+    bottom: 75%;
+  }
 }
 
 @keyframes spin {
@@ -253,22 +282,29 @@ footer {
   position: fixed;
   bottom: 0;
 }
-footer p {
-  font-size: 16px;
+@media (max-width: 480px) {
+  footer p {
+    text-align: center;
+  }
 }
 
-/*Pages*/
 /*Utilities*/
-a {
-  font-family: "Montserrat", sans-serif;
-  color: #333;
-}
 a:hover {
   color: #2072AF;
   text-decoration: underline;
 }
 a:active {
   color: #008000; /* Change link color when clicked */
+}
+
+p, a {
+  color: #333;
+  font-size: 16px;
+}
+@media (max-width: 480px) {
+  p, a {
+    font-size: 12px;
+  }
 }
 
 .active {

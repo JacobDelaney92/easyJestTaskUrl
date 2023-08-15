@@ -4,9 +4,16 @@
     align-items: center;
     &__container{
         max-width: 1024px;
+        width: 55%;
         margin: 0 auto;
         border: 1px solid black;
         padding: 2rem;
+        @include sm{
+          width: 85%;
+        }
+        @include lg{
+            width: 75%;
+        }
     }
 }
 

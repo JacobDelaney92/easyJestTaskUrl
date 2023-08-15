@@ -1,7 +1,5 @@
 
 a{
-    font-family:$body-font-family ;
-    color: $color-grey;
     &:hover {
         color: $color-blue;
         text-decoration: underline;
@@ -10,6 +8,14 @@ a{
     &:active {
         color: $color-green; /* Change link color when clicked */
     }
+}
+p,a{
+    color:$color-grey;
+    font-size: 16px;
+    @include sm{
+        font-size: 12px;
+    }
+
 }
 .active{
    border-bottom: 3px solid $color-blue;

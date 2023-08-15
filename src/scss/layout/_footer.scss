@@ -6,6 +6,8 @@ footer{
     position: fixed;
     bottom: 0;
     p{
-        font-size:$base-font-size;
+    @include sm{
+       text-align: center;
+    }
     }
 }

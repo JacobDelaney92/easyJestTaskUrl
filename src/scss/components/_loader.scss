@@ -6,8 +6,13 @@
   height: 20px;
   animation: spin 1s linear infinite;
   display: none;
-  position: relative;
-    left: 50%;
+  position: fixed;
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include sm{
+        bottom: 75%;
+    }
 }
 
 @keyframes spin {
